@@ -1,0 +1,139 @@
+.wrapper {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 23px;
+
+    & th,
+    td {
+        border: 1px solid #ccc;
+        overflow: hidden;
+    }
+}
+
+.trbody {
+    & td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:nth-of-type(2n) {
+        background-color: #f8f8f8;
+    }
+    min-height: 60px;
+    text-align: center;
+}
+
+.trhead {
+    & th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    background-color: #219657;
+    color: #fff;
+    min-height: 40px;
+}
+
+.action {
+    display: inline-flex;
+}
+
+.watch,
+.check,
+.delete {
+    min-height: 30px;
+    min-width: 30px;
+    background-color: transparent;
+    font-size: 1.8rem;
+    padding: 3px 5px;
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.watch {
+    color: #9f86c0;
+    background-color: rgba(159, 134, 192, 0.1);
+}
+
+.check {
+    color: #3194d4;
+    background-color: rgba(49, 148, 212, 0.1);
+}
+
+.delete {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.disable {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    color: #c0c0c0;
+}
+
+.btn-close {
+    display: flex;
+    justify-content: flex-end;
+
+    & button {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 6px 12px;
+        margin: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        
+        &:hover {
+            color: #fff;
+            background-color: #f44336;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    padding: 10px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #555;
+    width: 850px;
+    & > div {
+        margin-right: 5px;
+    }
+}
+
+.pro-detail {
+    display: flex;
+}
+
+.small-img {
+    min-width: 50px;
+    & img {
+        width: 46px;
+        height: 46px;
+        object-fit: contain;
+    }
+}
+
+.name-product {
+    flex: 1;
+}
+
+.order-modal {
+    margin-bottom: 15px;
+    height: 700px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 2rem;
+
+    & h3 {
+        margin: 0 10px;
+    }
+}
